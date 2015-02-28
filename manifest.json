@@ -21,5 +21,9 @@
     "activeTab",
     "storage",
     "file:///*"
+  ],
+  
+  "web_accessible_resources": [
+    "res/*"
   ]
 }
