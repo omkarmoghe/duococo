@@ -1,10 +1,15 @@
-document.getElementById("snoop_on").addEventListener("click", function() {
-    chrome.storage.sync.set({"snoop": 1});
-    reload();
-});
-document.getElementById("snoop_off").addEventListener("click", function () {
-    chrome.storage.sync.set({"snoop": 0});
-    reload();
+var last = 0;
+document.getElementById("coco_button").addEventListener("click", function() {
+    chrome.storage.sync.get("coco", function(data) {
+        last = data.coco;
+    });
+    if (last == 1) {
+        chrome.storage.sync.set({"coco": 0});
+        alert("Coco has been disabled.")
+    } else {
+        chrome.storage.sync.set({"coco": 1});
+        alert("Coco enabled.")
+    }
 });
 
 function reload () {

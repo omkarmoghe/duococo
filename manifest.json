@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Duococo",
-  "description": "This extension snoopifies your web experience.",
+  "description": "This extension adds a little baking soda your web experience.",
   "version": "1",
 
   "browser_action": {

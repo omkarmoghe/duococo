@@ -1,11 +1,12 @@
-// var snoop;
-// chrome.storage.sync.get("snoop", function(data) {
-// });
+var last;
+chrome.storage.sync.get("coco", function(data) {
+    last = data.coco;
+});
 
 var coco_video = chrome.extension.getURL('res/coco.mp4');;
 
 setInterval(function() {
-    if (!document.getElementById("coco-or-bust")) {
+    if (!document.getElementById("coco-or-bust") && last) {
         duococo();
     }
 }, 2000);
