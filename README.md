@@ -6,3 +6,4 @@ Special Thanks
 
 - [@russelltrupiano](https://github.com/russelltrupiano)
 - [@mattste](https://github.com/mattste)
+- [@ayushm](https://github.com/ayushm)
